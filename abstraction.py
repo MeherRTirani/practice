@@ -21,7 +21,7 @@ class Square(Shape):
         self.side=side
     def area(self):
         b= self.side**2
-        print("Area of square is",b)
+        print("Area of squ is",b)
 
     def perimeter(self):
         c=self.side*4
