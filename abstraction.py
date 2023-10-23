@@ -1,11 +1,11 @@
 from abc import ABC, abstractmethod
-class Shape(ABC):
+class Shape1(ABC):
     @abstractmethod
     def area(self):
         pass
     def perimeter(self):
         pass
-class Circle(Shape):
+class Circle(Shape1):
     def __init__(self,radius):
         self.radius=radius
     def area(self):
@@ -16,7 +16,7 @@ class Circle(Shape):
         b = 2*3.14*self.radius
         print("Perimeter of circle is", b)
 
-class Square(Shape):
+class Square(Shape1):
     def __init__(self,side):
         self.side=side
     def area(self):
